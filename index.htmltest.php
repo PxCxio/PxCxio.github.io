@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<!--
+******************************************************************************************
+	Author:	Ciro Pascasio
+	Subject: Personal Music Coding Tech Webpage
+	Program:
+
+	Certification:
+	I Hereby certify that this work is my own and none of it is the work of any other person
+........{ Ciro Pascasio }........
+****************************************************************************************
+-->
+<html lange="en">
+
+<head>
+<meta charset="utf-8" />
+
+ <!--css/js files are also supported, you can
+ refer them using relative path.
+ Save all files first, including html file
+ to use this feature.
+ Author: Ciro Pascasio
+  -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="includes/index.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="site">
+
+<div class="title">	
+<!--
+
+	<div class="dropdown">		
+	<span> Home </span>
+	<div class="dropdown-content">
+	<p><font family="helvetica" size="4"><a href="index.html">Home</a> </font> </p>
+	</div>
+	</div>
+
+	 <div class="dropdown">
+        <span> Hotkeys </span>
+        <div class="dropdown-content">
+        <p><font family="helvetica" size="4"><a href="index.html">Hotkeys</a> </font> </p>
+        </div>
+        </div>
+
+	 <div class="dropdown">
+        <span> Lessons </span>
+        <div class="dropdown-content">
+        <p><font family="helvetica" size="4"><a href="index.html"> Lessons</a> </font> </p>
+        </div>
+        </div>
+
+	 <div class="dropdown">
+        <span> Contact Me </span>
+        <div class="dropdown-content">
+        <p><font family="helvetica" size="4"><a href="index.html">Contact Me</a> </font> </p>
+        </div>
+        </div>
+
+</div>
+-->
+
+	 
+<!--script type="text/javascript" src="js/three.js" ></script-->
+
+<script type="text/javascript" src="js/index.js" ></script>
+<script type="text/javascript" src="js/three.min.js" ></script>
+<script type="text/javascript" src="js/TweenMax.min.js" ></script>
+<script type="text/javascript" src="js/bas.js" ></script>
+<script type="text/javascript" src="js/OrbitControls-2.js" ></script>
+<script type="text/javascript" src="js/slideshow.js">function(){showDivs(1);} </script>
+
+  <div class="w3-content w3-display-container">
+  	<img  class="mySlides" src="images/link_03.png" style="width: 100%; height: 270px; object-fit: cover;">
+ 	<img  class="mySlides" src="images/link_02.png" style="width: 100%; height: 270px; object-fit: cover;">
+ 	<img  class="mySlides" src="images/link_04.png" style="width: 100%; height: 270px; object-fit: cover;">
+
+	<!--div id="three-container" class="mySlides" style="width: 100%; height: 270px; "-->
+<!--script type="text/javascript" src="js/3ImageTransition.js" ></script-->
+     <!--div id="instructions">
+   Press Hold Right Mouse Button and Drag to Control the Animation
+     </div>
+
+   </div-->
+
+	<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-display-right w3-black" onclick="plusDivs(+1)">&#10095;</button>
+
+
+	 <div class="w3-center w3-container w3-section w3-text-white w3-display-bottommiddle" style="width:100%; ">
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)" style="padding:7px;"></span>
+  	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)" style="padding:7px;"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)" style="padding:7px;"></span>
+	</div>
+  </div>
+
+<!--script>
+document.getElementById("mySlides").onload = function() {plusDivs(-1)};
+</script-->
+
+</div>
+
+<!--script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script-->
+
+
+<div class="nav">
+
+<center> 
+<nav align="center"><font size="3">
+
+<ul>
+	<li><a href="index.html">Home</a><ul>
+	<li><a href="hotkeys.html">HotKeys</a></li>
+        <li><a href="gamelinks.html">Games</a></li>
+	</ul></li>     
+	<li><a href="includes/lessonlinks.html">Lessons</a></li>
+	<li><a href="includes/Pgm6.php">Contact Me</a></li>
+	<li><a href="includes/Pgm6.php">Shortkeys/Hotkeys</a></li>
+        <li><a href="includes/store.php">Store</a></li>
+	<li><a href="includes/Live.html">Live</a></li>
+	<li><a href="#">Linked</a></li>
+        <li><a id="linkedin" href="#"><span></span></a></li>
+
+</ul>
+	</font>
+</nav>
+</center>
+</div>
+	
+	<div class="lbar">	
+	<font color="black">
+	Exotic Instrumental Music
+	</font>
+	<iframe width="100%" height="100%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/156979267&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	
+<!--img class="prtFolio" id="prtFolio" src="images/prtFolio.png"/>
+-->
+          <input type="checkbox" id="check">
+          <label id="central" for="check"><img src="images/centralxy.png"/></label>
+          <a href="a"><img class="link" id="link_01" src="images/link_01.png"/></a>
+          <a href="a"><img class="link" id="link_02" src="images/link_02.png"/></a>
+          <a href="a"><img class="link" id="link_03" src="images/link_03.png"/></a>
+          <a href="a"><img class="link" id="link_04" src="images/link_04.png"/></a>
+	  <a href="a"><img class="link" id="link_05" src="images/link_05.png"/></a>
+
+	</div>
+		
+	<div class="main">
+	<table><tr>	
+	<td style="vertical-align:top;">	
+Musician Since 2003, and Self taught Music Producer since 2011, B.Sc in IT.	
+Please browse the different Music portfolios by clicking on the symbol and choosing one of the respective genres Originals, Instrumentals, VideoGame, Experimental, Folk, Environmental/Relax, Rythms or Film/Trailer music is available and different licencing options including: Master Recording, Performance, Synchronization, Mechanical and Print licenses, To Accomodate to whichever music, film, videogame, or marketing need you might have. Private Request: such as Mixing, Mastering, Performance, Classes, and Comissions go to the Contact Me page, Please also browse our self made drums midi gallery.
+  
+	<!--Original/Rock, Instrumental, VideoGames, Experimental, Folk, Environmental/Relax, Rythms, Film/Trailer-->
+	</td>
+        </tr>
+	</table>
+	</div>
+
+	
+	<div class="lwbar">
+	Latest Youtube Upload		
+<iframe id="ytb2" width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=UUX5fJdGsW_bC1j7bWKoLBlw " frameborder="0" allowfullscreen></iframe>
+
+   <!--<td> <iframe width="100%" height="333" scrolling="no" frameborder="no" src="https://www.reverbnation.com/widget_code/html_widget/artist_1143520?widget_id=55&pwc[included_songs]=1&context_type=page_object&spoid=artist_1143520" style="width:0px;min-width:100%;max-width:100%;"></iframe>
+  </td> -->
+
+<!--
+ <iframe width=100%" height="225" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/246064283&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+-->
+	
+	</div>
+	
+	
+	<div class="lmid">
+	<table>
+	<tr>
+	<td>
+	</td>
+	<td>
+	Please Check out my CyberSecurity Classes, and my respective programming language portfolios. I offer different technical services such as: Network Assurance, System Administration, Password Security assesments.  
+	 
+	</td>	
+	</tr>
+	</table>
+</div>
+
+  <div class="rsidebar">
+  <table width="100%">
+	<center>
+  	<tr>
+  		<td>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front">
+		<div class="w3-card-2">
+		<img src="images/Ciro_SSO.jpg" alt="Ciro's Picture" style="width:250px;height:300px;">	<!-- front content -->
+		<div class="w3-container w3-center">
+		<p> Ciro Pascasio </p>
+		</div>
+		</div>
+		</div>
+		<div class="back">
+		 <div class="w3-card-4">
+
+	<header class="w3-container w3-blue">
+  	<h1>
+
+		B.Sc Information Technology - F.I.U.
+</h1>
+	</header>
+
+	<div class="w3-container">
+  	<p>Certifications</p>
+	</div>
+
+	<footer class="w3-container w3-blue">
+  	<h5>
+       		Network Assurance - Texas A&M
+		<br/>
+		Digital Forensics Basics - Texas A&M
+		<br/>
+		Information Security Basics - Texas A&M
+		<br/>
+	</h5>
+	</footer>
+	</div> 		
+		<!-- back content -->
+		</div>
+	</div>
+</div>
+
+		<br/>
+		<a href="https://github.com/PxCxio">Github Portfolio</a>
+		<br/>
+		Skills:
+		<br/>
+		<a href="windwsPage.html">Windows</a>
+		<br/>
+		<a href="unixPage.html">Unix</a>
+		<br/>
+		<a href="sqlPage.html">Sql</a>
+		<br/>
+		<a href="webSitePage.html">Website</a>
+		<br/>
+		<a href="NetworkAssurance.html">Network & Sys. Admin</a>
+		<br/>
+		<a href="MusicProduction.html">Music Producer/Engineer</a>
+		<br/>
+		<a href="GraphicDesign.html">Graphic Designer</a>
+		<br/>
+		<br/>
+		
+		</td>
+  	</tr>
+	</center>
+  </table>
+  </div>
+
+  <div class="lxbar">
+	<nav class="ftlinks">		
+	<ul>
+	<li><a href="https://www.facebook.com/ciro.pascasio"><img src="images/Facebook.png" alt="Facebook Icon" style="width:35px;height:35px;vertical-align:middle;"></a></li>
+	<li><a href="https://www.youtube.com/user/Redlabel0/playlists?view_as=public"><img src="images/YouTubeicon.png" alt="YouTube Icon" style="width:35px;height:35px;vertical-align:middle;"></a></li>
+
+	 <li><a href="https://www.instagram.com/00ciro"><img src="images/Instagram.png" alt="Instagram Icon" style="width:35px;height:35px;vertical-align:middle;"></a></li>
+
+
+	<li>
+	</ul>
+	</nav>
+  </div>  
+ 
+  <div class="mxbar">
+  </div>
+
+  <div class="rxbar">
+  <a href="includes/help.php">Help</a> &nbsp;
+  <a href="includes/about.php">About</a>
+  <a id="linkedin" href="#"><span></span></a>
+  </div>
+
+    <div class="footer">
+	<h3><font size="3" color="red">My Name is Ciro Pascasio</font></h5>			
+	<font size="2" >
+born in Mexico in 92, I have been playing music since 2003
+	</font>
+
+	<font size="2" >
+Self taught Music Producer in Logic Pro X since 2011
+	</font>
+
+	<font size="2" >
+I'm also a Video and Photo enthusiast with experience with an art gallery as the digital gallery picture administrator.
+	</font>
+
+	<font size="2" >
+I produce with Kontakt Libraries, Therefore multiple instruments are possible. Making environment audio for video games, or just small audio motiffs for creative purposes. taking inquiries at cirorock@live.com </br>
+	<b>Free Downloadables SoundCloud folder if you enjoyed what you've heard gift us money at :</b>
+	<p><a href="http://www.paypal.me/ciropas">www.paypal.me/ciropas</a> 
+	</p>
+	</font>
+    <!-- Crazy Games go to:
+         
+         miniclip.com
+         newgrounds.com
+         there was this candy mini golf from life savers u should google it a gem
+         Matrix fighting sticks game
+	Attack on Titan
+      -->	
+
+  </div> 
+</div>
+
+</body>
+</html>
+
+    

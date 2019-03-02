@@ -1,0 +1,705 @@
+
+/*
+******************************************************************************************
+	Author:	Ciro Pascasio
+	Subject: Personal Music Coding Tech Webpage
+	Program:
+
+	Certification:
+	I Hereby certify that this work is my own and none of it is the work of any other person
+........{ Ciro Pascasio }........
+****************************************************************************************
+*/
+  
+	
+h1{
+color: #e2e2e2;
+}
+    
+body{
+background-color: #black;  
+}
+   
+#snk{
+grid-area: title;
+
+}
+     
+/*Dropdown menu not li*/
+.dropdown{
+position: relative;
+display: inline-block;
+color:blue;
+	
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #black;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 6px; 8px;
+z-index: 1;
+
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.maintext{
+vertical-align:top;
+}
+
+/*CSS GRID*/
+.site{
+display: grid;
+width: 100%;
+height: 100%;
+background-color: #d9ebf6;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr .5fr .21fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
+grid-template-areas:
+"lbar"
+"nav"
+"main"
+"title"
+"rsidebar"
+"lwbar"
+"lmid"
+"mxbar"
+"lxbar"
+"rxbar"
+"footer"
+;
+}
+
+@media (min-width: 900px){    
+.site{
+display: grid;
+width: 100%;
+height: 100%;
+grid-template-columns: 1fr;
+grid-template-rows: .8fr .3fr .22fr 1fr .3fr .2fr .05fr .007fr .05fr .05fr;
+grid-template-areas:
+                
+ "lbar"
+ "nav"
+ "main"
+ "title"
+ "rsidebar"
+ "lwbar"
+ "lmid"
+ "mxbar"
+ "lxbar"
+ "rxbar"
+ "footer"
+ ;
+    }
+}
+     
+@media (min-width:1050px) {
+.site{
+display: grid;
+width: 100%;
+height: 100%;
+/*grid-template-columns: 1fr 2fr 1fr;*/
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-rows: .6fr .09fr 1fr 1fr .5fr 2fr;
+grid-template-areas:
+"title title title"
+"nav nav nav"
+"lbar main rsidebar"
+"lwbar lmid rsidebar"
+"lxbar mxbar rxbar"
+"footer footer footer"
+;
+}
+}
+
+.title {
+color: white;
+display: yes;
+background-color: black;
+grid-area: title;
+font: 30px "times",Verdana, sans, times;
+text-align: center;
+vertical-align: middle;
+line-height: 3.5;
+font-size: 9px;	
+}
+
+.nav {
+color: white;
+background-color: black;
+grid-area: nav;
+font: 8px "times",Verdana, sans, times;
+text-align:center;
+vertical-align: middle;
+line-height: 0.5;
+position: sticky;
+position: webkit-sticky;
+top: 0px;
+
+}
+
+
+@media (min-width:900px){
+.nav {
+font: 20px "times",Verdana, sans, times;
+
+}
+}
+
+.main{
+color: black;
+background-color: #d9ebf6;
+grid-area: main;
+text-align: center;
+vertical-align: top;
+font: 20px "Time's New Roman",Verdana, sans, times;
+margin: 1em;
+background-position-x: -800px;
+background-position-y: -200px; 	    	
+    	
+}
+
+@media (min-width:900px){
+.main{
+font: 20px times, black;
+background-color: #d9ebf6;
+grid-area: main;
+text-align: center;
+vertical-align: top;
+/*font: 12px "Time's New Roman",Verdana, sans, times;*/
+background-position-x: -800px;
+background-position-y: -200px; 	    	
+    	
+}
+}
+
+@media (min-width:1050px){
+.main{
+color: black;
+background-color: #d9ebf6;
+grid-area: main;
+text-align: center;
+vertical-align: top;
+/*font: 12px "Time's New Roman",Verdana, sans, times;*/
+background-position-x: -800px;
+background-position-y: -200px; 	    	
+    	
+}
+}
+
+.lmid{
+	
+font: 20px "times",Verdana, sans, times;
+color: black;
+background-color: #d9ebf6;
+margin: 1em;
+grid-area: lmid;
+text-align: center;
+vertical-align: bottom;
+/*font: 12px "Time's New Roman",Verdana, sans, times;*/
+background-position-x: -800px;
+background-position-y: -200px; 	    	
+    	
+}
+
+.lbar{
+font: 22px "times",Verdana, sans, times;
+background-color: #d9ebf6;
+grid-area: lbar;
+text-align: center;
+
+}
+
+.lwbar{
+font: 22px "times",Verdana, sans, times;
+background-color: #d9ebf6;
+grid-area: lwbar;
+text-align: center;
+
+}
+
+.rmid{
+grid-area: rmid;
+background-color: #d9ebf6;
+}
+
+
+.rsidebar{
+color: red;
+grid-area: rsidebar;
+background-color:#d9ebf6;
+text-align: center;
+}
+
+
+.rxbar{
+background-color: black;
+color: goldenrod;
+grid-area: rxbar;
+text-align: right;
+vertical-align: middle;
+font: 17px "times",Verdana, sans, times;
+line-height: 3.2;
+		
+}
+
+.mxbar{
+background-color: black;
+grid-area: mxbar;
+color: white;
+text-align: center;
+vertical-align: middle;
+font: 17px "times",Verdana, sans, times;
+line-height: 3.2;       
+        
+}
+
+.lxbar{
+background-color: black;
+grid-area: lxbar;
+color: black;
+text-align: left;
+vertical-align: middle;
+font: 17px "times",Verdana, sans, times;
+line-height: 3.2;       
+        
+}
+    
+.footer
+{
+background-color: black;
+grid-area: footer;
+color: white;
+text-align: left;
+vertical-align: middle;
+font: 17px "times",Verdana, sans, times;
+line-height: 3.2;
+}
+
+   
+/*Navigation Bar CSS*/
+
+nav ul ul
+{
+display: none;
+/*if changed to yes it will display all ul ul menues */
+}
+
+
+nav ul li:hover > ul
+{
+display: block;
+	  
+}
+
+nav ul
+{
+/* this section does not seem to have any effect */
+background: purple; /* #efefef; */
+background: linear-gradient(top, #101010 0%, #2f1a1a 100%);
+background: -moz-linear-gradient(top, #101010 0%, #2f1a1a 100%);
+background: -webkit-linear-gradient(top, #101010 0%,#2f1a1a 100%);
+box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+padding: 0px 5px;
+border-radius: 10px;
+list-style: none;
+position: relative; 
+display: inline-table;
+}
+
+
+nav ul:after
+{
+content: ""; clear: both; display: block;
+}
+
+
+nav ul li
+{
+/*left will display the menu in current order
+right will display menu from the right (backwards) */
+float: left;
+}
+
+
+nav ul li:hover
+{
+background: #E0E0E0; /* #E0E0E0; #4b545f; = Very dark grayish blue.*/
+background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+
+
+nav ul li:hover a
+{
+/* this section does not seem to have any effect */
+color: grey; /* #ffffff; =2f1a2f #ff00ff; /*#fff; */ /*menu name color */
+}
+
+
+nav ul li a
+{
+display: block; padding: 78px 2px; /* menu height by witdh */
+color: white; /* main menu name #757575;*/ text-decoration: unset;
+
+/*
+text-decoration: none;
+text-decoration: underline red;
+text-decoration: underline wavy red;
+
+text-decoration: inherit;
+text-decoration: initial;
+text-decoration: unset;
+*/
+}
+	
+@media (min-width:900px){
+nav ul li a
+{
+padding: 68px 15px;
+}
+}
+	
+@media (min-width:1050px){
+nav ul li a 
+{
+padding: 11px 5px;
+}
+}
+
+
+nav ul ul
+{
+/* sub menues colors #bfc1c6;= light gray #5f6975;=darker lightslategray */
+background: #black;  border-radius: 0px; padding: 0;
+position: absolute; top: 100%;
+}
+
+
+nav ul ul li
+{
+/*lines color top and bottom on submenues selections */
+float: none; /*yes will display menues sideways, not top down */
+border-top: 1px solid black; /*#6b727c; */ /*border top */
+border-bottom: 1px solid black; /*border down */
+position: relative;
+}
+
+
+nav ul ul li a
+{
+/* selection name color at ul ul li */
+padding: 10px 40px;
+color: whitesmoke; /* #fff; */
+}
+
+
+nav ul ul li a:hover
+{
+/* hovering submenu background color selections #4b545f; submenu */
+background: #A9A9A9;
+}
+
+
+nav ul ul ul
+{
+position: absolute; left: 100%; top:0;
+}
+  
+/*Clean up everything else?*/
+*{
+margin: 0;
+padding: 0;
+}
+
+/*Adding stickyness main menu*/
+ul {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+
+@media (min-width:900px){
+#ytb1{
+}
+
+}
+
+
+/*Dynamic Menu Links*/
+.ftlinks{
+margin 1px 1px;
+width: 300px;
+height: 25px;
+
+}
+
+.reg{
+margin 1px 1px;
+width: 300px;
+height: 25px;
+}
+
+
+
+#check{
+display: none;
+}
+
+
+/*-250  340*/
+#central {
+cursor: pointer;
+width:  150px;
+height: 150px;
+position: absolute;
+margin: -9.5em 9.6em;
+z-index: 1;
+}
+
+@media (min-width:900px){
+#central {
+cursor: pointer;
+width:  150px;
+height: 150px;
+position: absolute;
+margin: -9.8em 8.6em;
+z-index: 1;
+}
+}
+
+@media (min-width:1050px){
+#central {
+cursor: pointer;
+width:  150px;
+height: 150px;
+position: absolute;
+margin: -10em 0em;
+z-index: 1;
+}
+}
+
+#central img{
+width: 100%;
+transition: all .4s ease-in-out;
+border-radius: 50%;
+}
+
+
+.prtFolio
+{
+margin 1px 1px
+width: 175px;
+height: 175px;
+position: absolute;
+margin: 12em -14em;
+border-radius: 10px;
+transform: translate(5px,-98px);
+}
+
+
+@media (min-width:900px){
+.prtFolio
+{
+margin 1px 1px;
+width: 175px;
+height: 175px;
+position: absolute;
+margin: 8em -17em;
+border-radius: 10px;
+transform: translate(5px,-98px);
+}
+}
+
+@media (min-width:1050px){
+.prtFolio
+{
+margin 1px 1px
+width: 175px;
+height: 175px;
+position: absolute;
+margin: 5.6em -9em;
+border-radius: 10px;
+transform: translate(5px,-98px);
+}
+}
+
+/*Carousel+3ImageSlider*/
+.mySlides {
+display:none;
+}
+
+.w3-content{
+max-width:100%;
+}
+
+.w3-left, .w3-right, .w3-badge {
+cursor:pointer
+}
+
+.w3-badge {
+height:13px;
+width:13px;
+padding:0
+}
+
+/*
+floating Button
+*/
+
+.link{
+position: absolute;
+margin: -7em 10.9em;
+height: 60px;
+width: 60px;
+border-radius: 100%;
+transition: all .1s ease-out;
+}
+
+@media (min-width:900px){
+.link{
+position: absolute;
+margin: -7em 10.9em;
+height: 60px;
+width: 60px;
+border-radius: 100%;
+transition: all .1s ease-out;
+}
+}
+ 
+@media (min-width:1050px){
+.link{
+position: absolute;
+margin: -7em 2.5em;
+border-radius: 100%;
+transition: all .1s ease-out;
+}
+}
+
+#check:checked ~ a #link_01{
+transform: translateY(-150px);
+}
+
+#check:checked ~ a #link_02{
+transform: translateX(150px);
+transition-delay: .1s;
+}
+
+#check:checked ~ a #link_03{
+transform: translate(100px,-100px);
+transition-delay: .2s;
+}
+
+#check:checked ~ a #link_04{
+transform: translateX(-150px);
+transition-delay: .3s;
+}
+
+#check:checked ~ a #link_05{
+transform: translate(-100px,-100px);
+transition-delay: .3s;
+}
+
+#check:checked ~ #central img{
+transform: rotate(50deg);
+}
+
+/*Linked In*/
+
+#linkedin {
+width:  64px;
+height: 1px; 
+background-image: url("../images/linkedins.png");
+}
+
+@media (min-width:900px){
+#linkedin {
+width:  130px;
+height: 130px;
+background-image: url("../images/linkedinm.png");
+
+}
+}
+
+@media (min-width:1050px){
+#linkedin {
+width:  44px;
+height: 44px;
+margin: 0px;
+background-image: url("../images/linkedin.jpg");
+}
+}
+
+
+
+#SideNote {
+size: 10px;
+font: helvetica;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+position: center;	
+width: 320px;
+height: 310px;
+align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+	
+}
+
+/* flip speed goes here */
+.flipper {
+transition: 0.6s;
+transform-style: preserve-3d;
+
+position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+backface-visibility: hidden;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+/* front pane, placed above back */
+.front {
+z-index: 2;
+/* for firefox 31 */
+transform: rotateY(0deg);
+}
+
+
+/* back, initially hidden pane */
+.back {
+transform: rotateY(180deg);
+}
+
+/*canvas {
+background-color: #ffffff;
+/*background-image: radial-gradient(#666, #333);*/
+/*grid-area: title;
+height: 346px;
+width: 100%;
+}*/
