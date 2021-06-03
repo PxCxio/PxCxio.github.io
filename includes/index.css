@@ -59,8 +59,9 @@ width: 100%;
 height: 100%;
 background-color: #d9ebf6;
 grid-template-columns: 1fr;
-grid-template-rows: 1fr .5fr .21fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
+grid-template-rows: 1fr .1fr .21fr .1fr .1fr .91fr .1fr .1fr .1fr .3fr;
 grid-template-areas:
+
 "lbar"
 "nav"
 "main"
@@ -81,7 +82,7 @@ display: grid;
 width: 100%;
 height: 100%;
 grid-template-columns: 1fr;
-grid-template-rows: .8fr .3fr .22fr 1fr .3fr .2fr .05fr .007fr .05fr .05fr;
+grid-template-rows: .8fr .1fr .22fr .1fr .1fr .91fr .1fr .1fr .1fr .3fr;
 grid-template-areas:
                 
  "lbar"
@@ -134,7 +135,7 @@ font-size: 9px;
 color: white;
 background-color: black;
 grid-area: nav;
-font: 8px "times",Verdana, sans, times;
+font: 18px "times",Verdana, sans, times;
 text-align:center;
 vertical-align: middle;
 line-height: 0.5;
@@ -235,6 +236,7 @@ color: red;
 grid-area: rsidebar;
 background-color:#d9ebf6;
 text-align: center;
+font: 25px "times",Verdana, sans, times;
 }
 
 
@@ -242,7 +244,7 @@ text-align: center;
 background-color: black;
 color: goldenrod;
 grid-area: rxbar;
-text-align: right;
+text-align: center;
 vertical-align: middle;
 font: 17px "times",Verdana, sans, times;
 line-height: 3.2;
@@ -346,7 +348,7 @@ color: grey; /* #ffffff; =2f1a2f #ff00ff; /*#fff; */ /*menu name color */
 
 nav ul li a
 {
-display: block; padding: 78px 2px; /* menu height by witdh */
+display: block; padding: 40px 2px; /* menu height by witdh */
 color: white; /* main menu name #757575;*/ text-decoration: unset;
 
 /*
@@ -615,15 +617,23 @@ transform: rotate(50deg);
 /*Linked In*/
 
 #linkedin {
-width:  64px;
-height: 1px; 
-background-image: url("../images/linkedins.png");
+width:  100px;
+height: 100px; 
+-moz-transform:scale(0.65);
+-webkit-transform:scale(0.65);
+transform:scale(0.65);
+
+background-image: url("../images/linkedins.jpg");
 }
 
 @media (min-width:900px){
 #linkedin {
-width:  130px;
-height: 130px;
+width:  145px;
+height: 145px;
+margin: 0px;
+-moz-transform:scale(0.55);
+-webkit-transform:scale(0.55);
+transform:scale(0.65);
 background-image: url("../images/linkedinm.png");
 
 }
